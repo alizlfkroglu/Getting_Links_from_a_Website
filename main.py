@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 target_url = "https://news.ycombinator.com/"
 foundLinks = []
-y= 30
+
 def make_request(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
